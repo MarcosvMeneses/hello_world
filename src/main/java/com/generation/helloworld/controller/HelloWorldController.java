@@ -13,9 +13,26 @@ public class HelloWorldController {
 		return "<b>Hello World!</b>";
 	}
 	
-	@GetMapping("/turma82")
-	public String turmaJava82() {
-		return "<b>A Turma Java 82 é TOP!</b>";
+	@GetMapping("/bsm")
+	public String bsm() {
+		return "<b>Os BSM's da Generation Brasil são:</b><br>"
+				+ "1. Comunicação<br>" //ver
+				+ "2. Responsabilidade Pessoal<br>"
+				+ "3. Mentalidade de Crescimento<br>"
+				+ "4. Orientação ao Detalhe<br>"//ver
+				+ "5. Trabalho em Equipe<br>"
+				+ "6. Orientação ao Futuro<br>"//ver
+				+ "7. Proatividade<br>"
+				+ "8. Comunicação<br>";
+	}
+	
+	@GetMapping("/objetivo")
+	public String objetivo() {
+		return "Objetivos de aprendizagem da semana: <br>"
+				+ "Banco de dados;<br>"
+				+ "Spring para desenvolvimento web;<br>"
+				+ "Orientação ao detalhe;"
+				+ "Proatividade.";
 	}
 	
 }
